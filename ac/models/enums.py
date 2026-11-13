@@ -1,0 +1,29 @@
+from enum import IntEnum
+
+
+class AC_STATUS(IntEnum):
+    AC_OFF = 0
+    AC_REPLAY = 1
+    AC_LIVE = 2
+    AC_PAUSE = 3
+
+
+class AC_SESSION_TYPE(IntEnum):
+    AC_UNKNOWN = -1
+    AC_PRACTICE = 0
+    AC_QUALIFY = 1
+    AC_RACE = 2
+    AC_HOTLAP = 3
+    AC_TIME_ATTACK = 4
+    AC_DRIFT = 5
+    AC_DRAG = 6
+
+
+class AC_FLAG_TYPE(IntEnum):
+    AC_NO_FLAG = 0
+    AC_BLUE_FLAG = 1
+    AC_YELLOW_FLAG = 2
+    AC_BLACK_FLAG = 3
+    AC_WHITE_FLAG = 4
+    AC_CHECKERED_FLAG = 5
+    AC_PENALTY_FLAG = 6
