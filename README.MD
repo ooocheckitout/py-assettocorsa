@@ -1,6 +1,6 @@
 # py-assettocorsa
 
-The Python library to read shared memory of Assetto Corsa Evo.
+The Python library to read shared memory of Assetto Corsa.
 
 ## Install
 
@@ -11,23 +11,23 @@ pip install py-assettocorsa
 ## Example
 
 ```python
-from acevo import ACEvoSharedMemory
+from ac import ACSharedMemory
 
 try:
-    with ACEvoSharedMemory() as memory:
+    with ACSharedMemory() as memory:
         static, physics, graphics = memory.read_snapshot()
-        print(static.session_name, static.track)
+        print(static.car_model, static.track)
         print(physics.speed_kmh, physics.gas, physics.brake)
-        print(graphics.current_lap_time_ms, graphics.car_coordinates)
+        print(graphics.i_current_time, graphics.car_coordinates)
 except FileNotFoundError as error:
-    print("The AC Evo shared memory is unavailable. Start a driving session.")
+    print("The AC shared memory is unavailable. Start a driving session.")
 ```
 
 ## Available Models
 
 | Model | Description |
 | --- | --- |
-| [Static](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/static.py) | Session, track, and game information. |
-| [Physics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/physics.py) | Speed, controls, engine, and wheel telemetry. |
-| [Graphics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/graphics.py) | Timing, positions, tyres, damage, and pit information. |
+| [Static](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/static.py) | Car, track, player, and game information. |
+| [Physics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/physics.py) | Speed, controls, engine, damage, and wheel telemetry. |
+| [Graphics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/graphics.py) | Session, timing, positions, tyres, and pit information. |
 | [Enums](https://github.com/ooocheckitout/py-assettocorsa/blob/main/acevo/models/enums.py) | Named status, session, and flag values. |
