@@ -8,8 +8,14 @@ dynamic = ["version"]
 description = "Read Assetto Corsa shared memory on Windows."
 readme = "README.MD"
 requires-python = ">= 3.3"
+license = "MIT"
+license-files = ["LICENSE"]
 dependencies = ["enum34 == 1.1.10; python_version < '3.4'"]
-classifiers = ["Operating System :: Microsoft :: Windows"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Operating System :: Microsoft :: Windows",
+]
 
 [dependency-groups]
 dev = ["build", "twine", "mypy"]
