@@ -25,9 +25,9 @@ except FileNotFoundError as error:
 
 ## Available Models
 
-| Model | Description |
-| --- | --- |
-| [Static](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/static.py) | Car, track, player, and game information. |
-| [Physics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/physics.py) | Speed, controls, engine, damage, and wheel telemetry. |
-| [Graphics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/graphics.py) | Session, timing, positions, tyres, and pit information. |
-| [Enums](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/enums.py) | Named status, session, and flag values. |
+| Model | Page | Description |
+| --- | --- | --- |
+| [Static](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/static.py) | `acpmf_static` | Car, track, player, and game information. |
+| [Physics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/physics.py) | `acpmf_physics` | Speed, controls, engine, damage, and wheel telemetry. |
+| [Graphics](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/graphics.py) | `acpmf_graphics` | Session, timing, positions, tyres, and pit information. |
+| [Enums](https://github.com/ooocheckitout/py-assettocorsa/blob/main/ac/models/enums.py) | - | Named status, session, and flag values. |

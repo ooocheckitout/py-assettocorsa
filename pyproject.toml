@@ -11,7 +11,15 @@ requires-python = ">= 3.3"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Oleh Solomoichenko" }]
-keywords = ["assetto-corsa", "assettocorsa", "assetto", "ac", "sim-racing", "simracing", "telemetry", "shared-memory", "racing"]
+keywords = [
+    "assettocorsa",
+    "assetto-corsa",
+    "assetto",
+    "simracing",
+    "sim-racing",
+    "telemetry",
+    "shared-memory",
+]
 dependencies = ["enum34 == 1.1.10; python_version < '3.4'"]
 classifiers = [
     "Development Status :: 4 - Beta",
